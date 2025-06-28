@@ -1,10 +1,9 @@
-import STLViewer from "@/components/stl-viewer";
-import Image from "next/image";
+import OriginBoard from "@/components/origin-board";
 
 export default function Home() {
   return (
     <div className="">
-      <STLViewer />
+      <OriginBoard />
     </div>
   );
 }
