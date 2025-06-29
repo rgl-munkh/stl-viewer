@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import * as THREE from "three";
 import { TransformControls } from "three/examples/jsm/controls/TransformControls.js";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import {
   KEYBOARD_SHORTCUTS,
   SNAP_VALUES,
@@ -14,7 +15,7 @@ interface UseKeyboardControlsProps {
     orthographic: THREE.OrthographicCamera;
     current: THREE.Camera;
   } | null;
-  orbitControls: any | null;
+  orbitControls: OrbitControls | null;
   onWindowResize: () => void;
 }
 
